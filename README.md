@@ -28,8 +28,8 @@ This repository is intentionally minimal and contains:
 
 - Ubuntu 22.04 + ROS 2 Humble (or your target ROS 2 distro)
 - MoveIt 2
-- A working robot description + ros2_control / controllers (if executing trajectories)
-- Isaac Sim (only if opening the USD scenes)
+- A working robot description + ros2_control / controllers 
+- Isaac Sim
 
 > If you’re using Isaac Sim + ROS 2 bridge, ensure your `/tf` tree, `robot_description`, and controller interfaces match what’s declared in the MoveIt config.
 
