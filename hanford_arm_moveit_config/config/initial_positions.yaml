@@ -1,0 +1,9 @@
+# Default initial positions for pit_robot_robotonly's ros2_control fake system
+
+initial_positions:
+  end_effector_joint: 0
+  insert_into_pipe: 0
+  joint_1: 0
+  joint_2: 0
+  joint_3_pulley_spin: 0
+  rotate_in_pipe: 0

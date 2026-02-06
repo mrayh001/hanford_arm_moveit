@@ -1,0 +1,8 @@
+
+# Omniverse / Isaac Sim caches (safe to ignore)
+**/.nucleus/
+**/.omniverse/
+**/.cache/ov/
+**/kit/cache/
+**/kit/logs/
+**/kit/config/

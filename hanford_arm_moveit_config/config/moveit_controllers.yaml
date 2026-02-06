@@ -1,0 +1,27 @@
+move_group:
+  ros__parameters:
+    # Tell MoveIt which manager to use
+    moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+    # List of controllers MoveIt can use
+    moveit_simple_controller_manager:
+      controller_names:
+        - hanford_manipulator_controller
+        - linear_axis_controller
+
+      hanford_manipulator_controller:
+        type: FollowJointTrajectory
+        action_ns: follow_joint_trajectory
+        default: true
+        joints:
+          - rotate_in_pipe
+          - joint_1
+          - joint_2
+          - end_effector_joint
+          - joint_3_pulley_spin
+
+      linear_axis_controller:
+        type: FollowJointTrajectory
+        action_ns: follow_joint_trajectory
+        joints:
+          - insert_into_pipe

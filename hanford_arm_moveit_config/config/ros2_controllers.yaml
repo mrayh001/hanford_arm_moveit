@@ -1,0 +1,39 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    hanford_manipulator_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    linear_axis_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+      initial_state: inactive
+
+hanford_manipulator_controller:
+  ros__parameters:
+    joints:
+      - rotate_in_pipe
+      - joint_1
+      - joint_2
+      - end_effector_joint
+      - joint_3_pulley_spin
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+linear_axis_controller:
+  ros__parameters:
+    joints:
+      - insert_into_pipe
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: new_link_arm_full
+    relative_path: urdf/pit_robot_robotonly.urdf
+  srdf:
+    relative_path: config/pit_robot_robotonly.srdf
+  package_settings:
+    author_name: Md Munim Rayhan
+    author_email: mrayhan@fiu.edu
+    generated_timestamp: 1762390956
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

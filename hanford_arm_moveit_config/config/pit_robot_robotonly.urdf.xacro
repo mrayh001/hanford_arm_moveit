@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="pit_robot_robotonly">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import pit_robot_robotonly urdf file -->
+    <xacro:include filename="$(find new_link_arm_full)/urdf/pit_robot_robotonly.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="pit_robot_robotonly.ros2_control.xacro" />
+
+
+    <xacro:pit_robot_robotonly_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>
