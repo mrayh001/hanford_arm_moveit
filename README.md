@@ -18,7 +18,6 @@ This repository is intentionally minimal and contains:
 ├── hanford_moveit_cpp_demo/
 ├── usd/
 │   ├── scenes/
-│   └── assets/          # only for custom meshes/textures you are allowed to redistribute
 └── media/
     └── moveit_short.gif
 ```
