@@ -115,7 +115,7 @@ ros2 run hanford_moveit_cpp_demo <executable>
 
 ## Maintainer
 
-Md Munim Rayhan
-Post Doctoral Associate
-Applied Research Center
+Md Munim Rayhan<br>
+Post Doctoral Associate<br>
+Applied Research Center<br>
 Florida International University
